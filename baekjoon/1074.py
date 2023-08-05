@@ -13,20 +13,19 @@ def quadrant(n):
     elif c >= half_len and r < half_len:
         quadrant_num = 2
         result += (quadrant_num-1) * moves_in_quadrant
-        r -= half_len
+        c -= half_len
     elif c < half_len and r >= half_len:
         quadrant_num = 3
         result += (quadrant_num-1) * moves_in_quadrant
-        c -= half_len
+        r -= half_len
     else:
         quadrant_num = 4
         result += (quadrant_num-1) * moves_in_quadrant
         r -= half_len
         c -= half_len
-    print(result)
     if n == 1:
         return
     else:
         quadrant(n-1)
 quadrant(N)
-print(result-1)
+print(result)
