@@ -22,11 +22,14 @@ for _ in range(n):
         if cmd == "D" and len_vir_list > del_count:
             del_count += 1
             if num == "1":
-                heapq.heappop(for_max)
-
+                x = heapq.heappop(for_max)
+                max_del_list.append(x)
             elif num == "-1":
-                d = heapq.heappop(for_min)
+                x = heapq.heappop(for_min)
+                min_del_list.append(x)
 
+    print(for_max, max_del_list)
+    print(min_del_list, for_min)
 
     if len_vir_list <= del_count:
         print("EMPTY")
