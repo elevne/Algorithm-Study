@@ -14,7 +14,7 @@ for i in range(n):
             q.append((i, j))
     apt.append(row)
 
-group_no = 1
+group_no = 5
 
 def dfs(x, y):
     global group_no, apt
@@ -43,7 +43,9 @@ for row in apt:
     result.extend(row)
 
 result_set = set(result)
-print(len(result_set) - 1)
+if 0 in result_set:
+    result_set.remove(0)
+print(len(result_set))
 
 result_cnt = []
 
