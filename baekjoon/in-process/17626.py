@@ -1,3 +1,4 @@
+# to be added at probs-to-retry
 # 방법이 몰까...... 고민 필요 ㅜㅜ
 nums = [i**2 for i in range(1, 224)]
 
