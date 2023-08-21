@@ -40,7 +40,7 @@ def move_cnt(points_to_visit, past_map, cur_point, goal_point):
         # 방금 갔던 곳이 마지막 목적지였다면 1 을 반환
         if len(points_to_visit) == 0:
             result += 1
-            return 1
+            return
         # 아직 목적지가 남아있다면
         else:
             return move_cnt(points_to_visit[:], past_map[:], cur_point, points_to_visit[0])
