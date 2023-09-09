@@ -7,7 +7,6 @@ nums = []
 for _ in range(n):
     nums.append(int(input()))
 
-# 항상 가장 작은 두 묶음을 합치기 ?
 nums.sort()
 result = 0
 while len(nums) > 1:
