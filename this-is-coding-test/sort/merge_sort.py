@@ -18,5 +18,6 @@ def merge_sort(arr):
     merged_arr += high_arr[h:]
     return merged_arr
 
+
 l = [3, 56, 1, 2, 66, 243, 134, 12465, 1234, 3423, 4578, 85, 111]
 print(merge_sort(l))
