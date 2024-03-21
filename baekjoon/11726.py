@@ -1,4 +1,3 @@
-# 맞추긴 했는데 거의 찍음...
 import sys
 
 n = int(sys.stdin.readline())
