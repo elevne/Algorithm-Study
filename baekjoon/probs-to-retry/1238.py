@@ -62,7 +62,7 @@ def dijkstra(start):
 
     while q:
         dist, now = heapq.heappop(q)
-
+        # todo: 꼭 체크하기!!!
         if distance[now] < dist:
             continue
 

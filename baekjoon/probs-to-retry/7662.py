@@ -1,6 +1,6 @@
 # 인터넷 답안
-import sys
 import heapq
+import sys
 
 for T in range(int(sys.stdin.readline())):
     k = int(sys.stdin.readline())
