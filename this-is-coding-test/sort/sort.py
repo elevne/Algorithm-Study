@@ -57,12 +57,11 @@ quick_sort(array, 0, len(array) - 1)
 # 아래와 같이 파이썬의 장점을 살려 작성할 수도 있다
 def quick_sort(array):
     if len(array) <= 1: return array
-    pivot = array[0]
-    tail = array[1:]
+    pivot, tail = array[0], array[1:]
+    return quick_sort([x for x in tail if x <= pivot]) \
+        + [pivot] \
+        + quick_sort([x for x in tail if x > pivot])
 
-    left_side = [x for x in tail if x <= pivot]
-    right_side = [x for x in tail if x > pivot]
-    return quick_sort(left_side) + [pivot] + quick_sort(right_side)
 
 
 # 계수정렬: 데이터의 크기 범위가 제한되어 정수 형태로 표현할 수 있을 때만 사용 가능하다
